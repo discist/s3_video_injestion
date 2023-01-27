@@ -9,8 +9,10 @@ const fs = require('fs');
 
 const cors = require('cors');
 const corsOption = {
-    origin: ['http://localhost:3000'],
+    origin: ['http://locadlhost:3000' , "https://discist.com"],
 };
+
+
 
 
 const logger = {
