@@ -1,0 +1,69 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://vjs.zencdn.net/7.21.1/video-js.css" rel="stylesheet" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3</title>
+</head>
+<body>
+
+    <h1> S3 Meidaconvert express app </h1>
+<p> trying to  upload video content and compress it in the backend using exporess to S3 and then transcode it with mediaconvert</p>
+
+<br>
+<br>
+<br>
+
+<form action="/upload_video_streaming_content" method="POST" enctype="multipart/form-data">
+
+
+    <input type="file" accept="video" name="file">
+    <input type="submit" value="submit" >
+
+
+</form>
+
+
+<video
+poster="https://d2ymp7m89s75n5.cloudfront.net/5105videonoice.0000001.jpeg"
+id="my-video"
+class="video-js"
+controls
+autoplay
+preload="auto"
+width="640"
+height="264"
+data-setup="{}"
+>
+
+
+
+    <source src="https://d2ymp7m89s75n5.cloudfront.net/4791video.m3u8
+    " type="application/x-mpegURL" />
+
+</video>
+
+
+
+<script src="https://vjs.zencdn.net/7.21.1/video.min.js"></script>
+
+    
+</body>
+</html>
+
+
+
+
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 100px;
+    }
+   
+</style>
