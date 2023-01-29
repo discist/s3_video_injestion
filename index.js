@@ -9,7 +9,7 @@ const fs = require('fs');
 
 const cors = require('cors');
 const corsOption = {
-    origin: ['http://locadlhost:3000' , "https://discist.com"],
+    origin: ['http://localhost:3000' , "https://discist.com"],
 };
 
 
@@ -166,7 +166,7 @@ console.log(base_s3);
 
     const params = {
         AccelerationSettings: {
-            Mode: 'DISABLED'
+            Mode: 'ENABLED'
         },
         Settings: {
             Inputs: [
